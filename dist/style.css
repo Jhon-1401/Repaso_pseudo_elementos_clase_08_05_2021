@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bolder;
+}
+a:link{
+    color: violet;
+    font-size: 2em;
+    background: yellow;
+    display: inline-block;
+    position: relative;
+    left: 25px;
+}
+a:visited{
+    color: darkgoldenrod;
+    background: white;
+}
+p:lang(en){
+    color:tomato;
+    
+}
+input[type="text"]{
+    margin: 20px;
+    border: 2px dotted red;
+}
+input[type="text"]:focus{
+  outline: none;
+  width: 30%;
+}
+div{
+    width: 150px;
+    height: 150px;
+    background: red;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin: 20px;
+    transition: all .5s; 
+    position: relative;
+ 
+}
+
+div:active{
+    width: 250px;
+    height: 250px;
+    border-radius: 100px;
+    background: blue;
+    cursor: progress;
+
+}
+p::after{
+    content: 'Todo Bien Todo correcto';
+    position: absolute;
+    left: 0;
+    height: 150vh;
+}
+div p:active::after{
+    content: 'Y yo que me alegro';
+    position: static;
+    margin: 0 auto !important;
+    /* display: none; */
+}
+
+div.caja2{
+width: 400px;
+height: 350px;
+border: 4px solid rgb(60, 255, 0);
+position: relative;
+margin:20px auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
